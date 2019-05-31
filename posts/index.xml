@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Rena&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 10:57:49 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 31 May 2019 00:33:25 +0100</lastBuildDate>
     
 	<atom:link href="https://renazhong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Poker Game Post</title>
+      <link>https://renazhong.github.io/posts/poker-game-post/</link>
+      <pubDate>Fri, 31 May 2019 00:33:25 +0100</pubDate>
+      
+      <guid>https://renazhong.github.io/posts/poker-game-post/</guid>
+      <description>https://github.com/renazhong/poker_game.git
+The task was to write a program that would allow a number of people (passed as an argument) to play a game of poker. We also had to ask what each player&amp;rsquo;s name was, and this was done through an input message.
+The next step was to random draw a hand of 5 cards to each player of the game. It is important to note that since poker is drawing without replacement, we had to make sure that none of the cards were drawn twice.</description>
+    </item>
     
     <item>
       <title>My First Post</title>

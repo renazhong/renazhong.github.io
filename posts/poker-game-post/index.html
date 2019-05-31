@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Rena&#39;s Blog  | Poker Game Post</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Poker Game Post" />
+<meta property="og:description" content="https://github.com/renazhong/poker_game.git
+The task was to write a program that would allow a number of people (passed as an argument) to play a game of poker. We also had to ask what each player&rsquo;s name was, and this was done through an input message.
+The next step was to random draw a hand of 5 cards to each player of the game. It is important to note that since poker is drawing without replacement, we had to make sure that none of the cards were drawn twice." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://renazhong.github.io/posts/poker-game-post/" />
+<meta property="article:published_time" content="2019-05-31T00:33:25&#43;01:00"/>
+<meta property="article:modified_time" content="2019-05-31T00:33:25&#43;01:00"/>
+
+<meta itemprop="name" content="Poker Game Post">
+<meta itemprop="description" content="https://github.com/renazhong/poker_game.git
+The task was to write a program that would allow a number of people (passed as an argument) to play a game of poker. We also had to ask what each player&rsquo;s name was, and this was done through an input message.
+The next step was to random draw a hand of 5 cards to each player of the game. It is important to note that since poker is drawing without replacement, we had to make sure that none of the cards were drawn twice.">
+
+
+<meta itemprop="datePublished" content="2019-05-31T00:33:25&#43;01:00" />
+<meta itemprop="dateModified" content="2019-05-31T00:33:25&#43;01:00" />
+<meta itemprop="wordCount" content="406">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Poker Game Post"/>
+<meta name="twitter:description" content="https://github.com/renazhong/poker_game.git
+The task was to write a program that would allow a number of people (passed as an argument) to play a game of poker. We also had to ask what each player&rsquo;s name was, and this was done through an input message.
+The next step was to random draw a hand of 5 cards to each player of the game. It is important to note that since poker is drawing without replacement, we had to make sure that none of the cards were drawn twice."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://renazhong.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Rena&#39;s Blog
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Poker Game Post</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-05-31T00:33:25&#43;01:00">May 31, 2019</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><a href="https://github.com/renazhong/poker_game.git">https://github.com/renazhong/poker_game.git</a></p>
+
+<p>The task was to write a program that would allow a number of people (passed as an argument) to play a game of poker. We also had to ask what each player&rsquo;s name was, and this was done through an input message.</p>
+
+<p>The next step was to random draw a hand of 5 cards to each player of the game. It is important to note that since poker is drawing without replacement, we had to make sure that none of the cards were drawn twice. This was done through keeping a list of drawn cards (in tuples of rank and suit) and testing if the card was already in the list. If it was already drawn, then we would have to redraw. Using a for loop would not have worked because if the card was drawn the loop would still count it, so in this scenario, we used a while loop, and for the condition where the card drawn was not part of the drawn pile, we would increase the count, and when it reached 5, the loop would terminate.</p>
+
+<p>For every player of the game, an empty list was created to represent their hand, and any card not part of the drawn list would be added the hand of 5 until it was full. This list was then added as the value for the dictionary that kept track of all the players and their hand of cards.</p>
+
+<p>Then for every player, we went through their hand of cards (the values of the dictionary) and sorted each from highest to lowest value. Since there were strings as well as integers, we created another dictionary in order to keep the values uniform, changing the strings into integer equivalents.</p>
+
+<p>This concluded the first part of the program, which was setting up the game. The next part is to determine who wins the game. The rules of this game was that whoever had the highest card in their hand would win, and if there was a tie, the second highest card between those with the tie would determine the winner.</p>
+
+<p>Since all the cards were already listed from highest to lowest value, all that we needed to do was to find the largest value and get the player who held that card. This is done through a for loop that loops through the highest card of all the players and then returns the player with the largest card.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://renazhong.github.io/" >
+    &copy; 2019 Rena&#39;s Blog
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
